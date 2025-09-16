@@ -12,11 +12,6 @@ import os
 
 load_dotenv()
 
-NOTION_TOKEN = os.getenv("NOTION_TOKEN")
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-PARENT_DATABASE_ID = os.getenv("PARENT_DATABASE_ID")
-GROQ_MODEL = os.getenv("GROQ_MODEL")
 
 
 
@@ -250,3 +245,4 @@ app.add_handler(CommandHandler("help", ajuda))
 
 # ===== RODA BOT =====
 app.run_polling()
+
